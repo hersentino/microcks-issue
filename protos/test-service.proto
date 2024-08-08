@@ -8,7 +8,8 @@ service TestService {
     rpc unary(UnaryRequest) returns (UnaryResponse) {}  
 }
 
-message UnaryRequest {    
+message UnaryRequest {   
+    // Comment this line, it will work 
     EnumTest type = 1; 
     Filters filters = 2;
 }
