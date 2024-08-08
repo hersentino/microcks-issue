@@ -9,7 +9,6 @@ Unable to import gRPC proto that contains an enum from another file.
 3. Import `protos/test-service.proto` => crash
 
    ```
-   com.google.protobuf.Descriptors$DescriptorValidationException: hello.UnaryRequest.type: ".hello.EnumTest" is not an enum type.] with root cause
    com.google.protobuf.Descriptors$DescriptorValidationException: hello.UnaryRequest.type: ".hello.EnumTest" is not an enum type.
    ```
 
