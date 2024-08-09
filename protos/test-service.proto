@@ -10,9 +10,9 @@ service TestService {
 
 message UnaryRequest {  
     // This is a message imported from common.proto
-    // With current behavior, because it is an import,
-    // It will not work unless we mount all the "protos" 
-    // directory in the "/tmp" of the container
+    // With the current behavior, since it is an import,
+    // it will not work unless we mount the entire "protos"
+    // directory to the "/tmp" directory of the container.
     Person user = 2;
 }
 

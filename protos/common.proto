@@ -3,9 +3,12 @@ syntax = "proto3";
 
 package hello;
 
+import "google/protobuf/timestamp.proto";
+
 // Here is an message that is shared between multiple services
 // and can be imported by multiple proto files
 message Person {    
     string name = 1;
-    int32 age = 2;
+    int32 height = 2;
+    // google.protobuf.Timestamp birthdate = 3;
 }

@@ -29,6 +29,8 @@ services:
   app:
     # volumes:
     #   - ./protos:/tmp/protos
+    #   - YOUR_PATH_TO_GOOGLE_PROTO:/tmp/google
+
     depends_on:
       - mongo
       - keycloak
