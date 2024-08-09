@@ -3,12 +3,9 @@ syntax = "proto3";
 
 package hello;
 
-enum EnumTest {
-    ENUM_TEST_UNSPECIFIED = 0; 
-    ENUM_TEST_TOTO = 1; 
-    ENUM_TEST_TATA = 2; 
-}
-
-message Filters {    
-    string message = 1; 
+// Here is an message that is shared between multiple services
+// and can be imported by multiple proto files
+message Person {    
+    string name = 1;
+    int32 age = 2;
 }

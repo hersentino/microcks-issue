@@ -27,8 +27,8 @@ services:
     container_name: microcks-postman-runtime
 
   app:
-    volumes:
-      - ./protos:/tmp/protos
+    # volumes:
+    #   - ./protos:/tmp/protos
     depends_on:
       - mongo
       - keycloak
