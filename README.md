@@ -6,19 +6,20 @@ The actual workarorund is to mount the entire 'protos' directory to the `/tmp` d
 
 ### How to reproduce the problem
 
-1. Run `docker compose up`.
-2. Connect, then go to `http://localhost:8080/#/importers`
-3. Click on `upload`
-4. Import `protos/test-service.proto` => crash
+1. Be careful to be on branch `import`
+2. Run `docker compose up`.
+3. Connect, then go to `http://localhost:8080/#/importers`
+4. Click on `upload`
+5. Import `protos/test-service.proto` => crash
 
    ```
     Import "protos/common.proto" was not found or had errors.
    ```
 
-5. Run `docker compose down`
-6. Comment out the hack lines `30`, `31` inside `docker-compose.yml`
-7. Run `docker compose up`
-8. Retry the import => works flawlessly
+6. Run `docker compose down`
+7. Comment out the hack lines `30`, `31` inside `docker-compose.yml`
+8. Run `docker compose up`
+9. Retry the import => works flawlessly
 
 ### How to repoduce the problem with external proto
 
